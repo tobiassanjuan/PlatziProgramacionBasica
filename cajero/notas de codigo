@@ -1,0 +1,23 @@
+
+cajero.js
+
+Cuando usamos document.write para escribir un resultado en nuestro documento html, practicamente reescribes la pagina (el evento onload cierra el html). Por esto una de las formas mas facil de cambiar esto (que no borre la imagen del cajero automatico) es o agregando un nuevo hijo al arbol, ejemplo pakiman, o crear una etiqueta vacia para luego cambiarle el html.  
+
+crearemos una etiqueta
+<p> </p> id="resultado" y el .js llamarlo y cambiarle el valor. 
+
+document.wirte es una mala practica, lo de las etiqueta es lo mas comun.
+
+linea 46: si no escribo resultado.innerHTML = resultado.innerHTML + ..... porque no hemos agregado que concatene el valor anterior que tenia.  
+ 
+innerHTML es el atributo del objeto resultado(que lo obtenemos al incio del codigo)  
+
+linea 48 +=  
+
+Para el reto de agregar en vez de texto imagenes, podemos usar el emplo de pakiman, agregando las imagenes del dinero al ciclo en el momento que estamos escribiendo los billetes
+
+el otro reto: que la caja del cajero automatico se empiece a quedar vacia.
+restarles a la variable caja a la caja disponible de billetes, los billetes que colocaste en la variable entregado. Ver en algun lado, cuando dinero tiene el atm y cuanto he ido entregando encada una de las secciones.
+
+Al terminar el desafio, colocar la version mas compacta que se pueda del codigo del cajero.
+ 
