@@ -2,7 +2,6 @@ var canvas = document.getElementById('area_de_dibujo');
 var papel = canvas. getContext('2d');
 var xi, xf, yi, yf, click;
 var color = "white";
-
 document.addEventListener("mousedown", iniciar);
 document.addEventListener("mousemove", mover);
 document.addEventListener("mouseup", final);
